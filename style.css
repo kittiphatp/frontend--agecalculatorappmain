@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+/* default */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+section {
+    width: 500px;
+    height: 420px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    border-bottom-right-radius: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 85%;
+    height: 85%;
+    /* border: 1px solid black; */
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.birth-day, .birth-month, .birth-year {
+    width: 120px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.birth-month, .birth-year {
+    margin-left: 10px;
+}
+
+label {
+    font-size: 10px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+}
+
+input[type=text] {
+    width: 85px;
+    height: 50%;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 4px;
+    text-align: start;
+    padding-left: 15px;
+    margin-top: 5px;
+    font-weight: 800;
+  }
+
+input[type=text]::placeholder {
+    font-size: 1.2em;
+    font-weight: 700;
+    color:hsl(0, 1%, 44%);
+}
+
+.logo {
+    width: 40px; 
+    height: 40px; 
+    background-color: hsl(259, 100%, 65%); 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position:absolute;
+    right: 0px;
+    bottom: -20px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* calculate section */
+main {
+    width: 100%;
+    height: 60%;
+    max-height: 200px;
+    font-size: 1.8em;
+    font-weight: 800;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+main > * {
+    line-height: 1;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+}
+
+/* Validation */
+.invalid {
+    color: hsl(0, 100%, 67%);
+}
+
+.show-invalid-day, .show-invalid-month, .show-invalid-year {
+    margin-top: 2px;
+    color: hsl(0, 100%, 67%);
+    font-size: 10px;
+    font-style: italic;
+}

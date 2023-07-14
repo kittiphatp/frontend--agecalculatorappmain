@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <div class="wrapper">
+      <header>
+        <div class="birth-day">
+          <label for="birth-day" class="label-day">DAY</label>
+          <input type="text" name="birth-day" id="birth-day" placeholder="DD">
+          <div class="show-invalid-day"></div>
+        </div>
+        <div class="birth-month">
+          <label for="birth-month" class="label-month">MONTH</label>
+          <input type="text" name="birth-month" id="birth-month" placeholder="MM">
+          <div class="show-invalid-month"></div>
+        </div>
+        <div class="birth-year">
+          <label for="birth-year" class="label-year">YEAR</label>
+          <input type="text" name="birth-year" id="birth-year" placeholder="YYYY">
+          <div class="show-invalid-year"></div>
+        </div>
+        <div class="logo">
+          <img src="./assets/images/icon-arrow.svg" alt="arrow-icon">
+        </div>
+      </header>
+      <main>
+        <div class="calc-years">
+          <span class="calc-years-result">--</span>
+          years
+        </div>
+        <div class="calc-months">
+          <span class="calc-months-result">--</span>
+          months
+        </div>
+        <div class="calc-days">
+          <span class="calc-days-result">--</span>
+          days
+        </div>
+      </main>
+    </div>
+  </section>
+
+  
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kittiphat Pisuittiporn</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
